@@ -1,1 +1,1 @@
-# [rsschool-cv](https://yamkin.github.io/rsschool-cv/cv)
+# [rsschool-cv](https://yamkin.github.io/rsschool-cv/)
