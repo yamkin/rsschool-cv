@@ -51,6 +51,7 @@ person3.compareAge(person1);
 - University:
 - Courses:
   - [FreeCodeCamp](https://www.freecodecamp.org/)
+  - [Theodinproject] (https://www.theodinproject.com/)
 
 ## Languages
 
