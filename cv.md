@@ -20,6 +20,7 @@ I am 35 years old, I work as a design engineer. I came into the front-end develo
 - Tailwind
 - Git
 - Figma
+- Vue
 
 ## Code Example
 
