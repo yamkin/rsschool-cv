@@ -1,47 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>My CV</title>
 </head>
+
 <body>
-    <h2>
-        Anton Yamkin
-    </h2>
-    <h2>
-        Contacts
-    </h2>
-    <p>
-        Location: Ulyanovsk, Russia
-    </p>
-    <p>
-        Telegram: [a_yamkin](https://t.me/a__ymkin)
-    </p>
-    <p>
-        Email: yamkin@gmail.com
-    </p>
-    <p>
-        GitHub: [yamkin](https://github.com/yamkin)
-    </p>
-    <h2>
-        About Me
-    </h2>
-    <p>
-        I am 35 years old, I work as a design engineer. I came into the front-end development direction for the reason that my current job has become boring me. I want develop towards front-end development. Therefore, I will do my best to achieve my goal.
-    </p>
-    <h2>
-        Skills
-    </h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS / SASS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Tailwind</li>
-        <li>Git</li>
-        <li>Figma</li>
-        <li>Vue</li>
-    </ul>
+    <div class="container">
+        <header class="header">
+            <div class="header__profile">
+                <img src="./img/avatar.JPG" alt="Photo of Anton Yamkin - Frontend Developer" class="header__avatar">
+                <div class="header__info">
+                    <h1>Anton Yamkin</h1>
+                    <p>Frontend Developer</p>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#contacts" class="nav__link">Contacts</a></li>
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+                    <li><a href="#projects" class="nav__link">Projects</a></li>
+                    <li><a href="#education" class="nav__link">Education</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section id="about" class="section">
+                <h2 class="section__title">About Me</h2>
+                <p>
+                    I am 35 years old, I work as a design engineer.
+                    I came into the front-end development direction for the reason that my current job has become boring
+                    me.
+                    I want develop towards front-end development. Therefore, I will do my best to achieve my goal.
+                </p>
+            </section>
+
+            <section id="contacts" class="section">
+                <h2 class="section__title">Contacts</h2>
+                <ul class="contacts__list">
+                    <li class="contacts__item">Location: Ulyanovsk, Russia</li>
+                    <li class="contacts__item">
+                        <a href="https://t.me/a__ymkin" class="contacts__link">Telegram: @a_yamkin</a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="mailto:yamkin@gmail.com" class="contacts__link">Email: yamkin@gmail.com</a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="https://github.com/yamkin" class="contacts__link">GitHub: yamkin</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="skills" class="section">
+                <h2 class="section__title">Skills</h2>
+                <ul class="skills__list">
+                    <li class="skills__item">HTML</li>
+                    <li class="skills__item">CSS / SASS</li>
+                    <li class="skills__item">JavaScript</li>
+                    <li class="skills__item">React</li>
+                    <li class="skills__item">Tailwind</li>
+                    <li class="skills__item">Git</li>
+                    <li class="skills__item">Figma</li>
+                    <li class="skills__item">Vue</li>
+                </ul>
+            </section>
+
+            <section id="code-example" class="section">
+                <h2 class="section__title">Code Example</h2>
+                <div class="code-example">
+                    <p>Function check age:</p>
+                    <pre><code>function checkAge(age) {
+    if (age >= 18) {
+        return "Adult";
+    } else {
+        return "Minor";
+    }
+}
+
+console.log(checkAge(20)); // "Adult"
+console.log(checkAge(16)); // "Minor"
+</code></pre>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2 class="section__title">Educational Projects</h2>
+                <ul class="projects__list">
+                    <li class="projects__item">
+                        <a href="https://github.com/yamkin/rick_and_morty.git" class="projects__link">Rick and Morty</a>
+                        -
+                        Test task for an open-source project
+                    </li>
+                    <li class="projects__item">
+                        <a href="https://github.com/yamkin/Astrio_shop.git" class="projects__link">Astrio Shop</a> -
+                        Test task for an online clothing store
+                    </li>
+                    <li class="projects__item">
+                        <a href="https://github.com/yamkin/cripto_coins_info.git" class="projects__link">Crypto
+                            Coins</a> -
+                        Pet project: crypto exchange
+                    </li>
+                </ul>
+            </section>
+
+            <section id="education" class="section">
+                <h2 class="section__title">Education and Languages</h2>
+                <h3 class="section__subtitle">Education</h3>
+                <div class="education__item">
+                    <strong>Ulyanovsk State Technical University</strong><br>
+                    Specialty: Software Engineer<br>
+                    Graduation year: 2012
+                </div>
+
+                <h3 class="section__subtitle">Language</h3>
+                <div class="education__item">
+                    English : Intermediate (B1-B2)
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__links">
+                    <a href="https://github.com/yamkin" class="footer__link">Author's GitHub</a>
+                </div>
+                <div class="footer__links">
+                    <a href="https://rs.school/courses/javascript-ru" class="footer__link">
+                        <img src="./img/rs-school-logo.svg" alt="Rolling Scopes School logo" class="footer__logo">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__info">
+                <p>Year created: 2025</p>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
